@@ -19,14 +19,4 @@ export const navItems = [
       path: "/contact",
       cName: "nav-item",
     },
-    {
-      title: "ENROLL",
-      path: "/enroll",
-      cName: "nav-enroll",
-    },
-    {
-      title: "LOGIN",
-      path: "/login",
-      cName: "nav-login",
-    },
   ];

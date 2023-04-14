@@ -22,6 +22,8 @@ export default function navbar() {
           );
         })}
       </ul>
+      <a href="#"className="enroll_btn">ENROLL</a>
+      <a href="#"className="login_btn">LOG IN</a>
       </div>
     </nav>
   );

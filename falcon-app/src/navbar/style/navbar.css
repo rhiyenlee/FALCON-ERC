@@ -38,29 +38,10 @@
     text-align: center;
     width: 70vw;
     justify-content: flex-end;
-    margin-left: 13rem;
+    margin-left: -5rem;
     margin-top: 2rem;
   }
-  
-  .nav-login,
-  .nav-enroll{
-    color: white;
-    width: 150px;
-    height: 41px;
-    background-color: #1e6b6b;
-    border-radius: 31px;
-    margin-top: 1px;
-    padding-top: 10px;
-    margin-left: 40px;
-  }
-  
-  .nav-enroll a {
-    color: white;
-  }
-  .nav-login a {
-    color: white;
-  }
-  
+
   a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
@@ -70,7 +51,7 @@
     position: relative;
     font-family: Gotham-bold;
   }
-  
+
   @font-face {
     font-family: Gotham-bold;
     src: url(../../Font/GothamBold.ttf);
@@ -79,9 +60,34 @@
   a:hover{
     color:#1e6b6b
   }
-  .nav-enroll a:hover{
+  .enroll_btn{
+    color: white;
+    width: 85px;
+    height: 30px;
+    background-color: #1e6b6b;
+    border-radius: 31px;
+    margin-top: 32px;
+    padding-top: 10px;
+    margin-left: 20px;
+    transition: scale 0.2 ease;
+  }
+  .login_btn{
+    color: white;
+    width: 75px;
+    height: 30px;
+    background-color: #1e6b6b;
+    border-radius: 31px;
+    margin-top: 32px;
+    padding-top: 10px;
+    margin-left: 20px;
+    transition: scale 0.2 ease;
+  }
+
+  .enroll_btn:hover{
+    scale: 1.05;
     color:white;
   }
-  .nav-login a:hover{
+  .login_btn:hover{
+    scale: 1.05;
     color:white;
   }

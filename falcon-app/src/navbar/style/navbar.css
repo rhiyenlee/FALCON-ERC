@@ -1,93 +1,137 @@
 .color-container {
-    background-color: #1e6b6b;
-    width: 100%;
-    height: 35px;
-  }
-  
-  .main-navbar {
-    width: 100%;
-    height: 112px;
-    background-color: #f0f1f1;
-    display: flex;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  .logo-png {
-    width: 60px;
-    height: 70px;
-    margin-top: 20px;
-    margin-left: 30px;
-    float: left;
-  }
-  
-  .falcon {
-    color: #1e6b6b;
-    margin-top: 50px;
-    margin-left: 10px;
-    font-family: Gotham-bold;
-  }
-  
-  .nav-item {
-    height: 10vh;
-    margin-top: 12px;
-  }
-  
+  background-color: #1e6b6b;
+  width: 100%;
+  height: 35px;
+}
+
+.main-navbar {
+  width: 100%;
+  height: 112px;
+  background-color: #f0f1f1;
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-png {
+  width: 60px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 30px;
+  float: left;
+}
+
+.falcon-title {
+  color: #1e6b6b;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-family: Gotham-bold;
+  font-size: 100%;
+}
+
+.nav-item {
+  height: 10vh;
+  margin-top: 12px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  padding: 6px 16px;
+  border-radius: 5px;
+  position: relative;
+  font-family: Gotham-bold;
+}
+
+@font-face {
+  font-family: Gotham-bold;
+  src: url(../../Font/GothamBold.ttf);
+}
+
+a:hover {
+  color: #1e6b6b;
+}
+
+.enroll_btn:hover {
+  scale: 1.05;
+}
+.login_btn:hover {
+  scale: 1.05;
+}
+
+.Mobile_Navigation {
+  display: none;
+}
+
+.btn-success{
+  border-radius: 30px;
+  background-color: #1e6b6b;
+}
+.btn-success:hover{
+  background-color: #1e6b6b;
+  transition: scale 0.2 ease;
+}
+
+
+.enroll{
+  margin-top: 0.5vh;
+}
+@media (max-width: 768px) {
   .nav-items {
+    display: none;
+  }
+
+  .Mobile_Navigation {
+    display: block;
+    position: fixed;
+    margin-left: 80%;
+    margin-top: 5vh;
+  }
+
+  .nav-item {
+    list-style: none;
+  }
+  .Navlinks_Mobile {
+    display: block;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    width: 100vw;
+    height: 110vh;
+    background: #f0f1f1;
+  }
+
+  .nav-item {
+    line-height: 15em;
+    margin-left: 35%;
+  }
+
+  .btn {
+    display: block;
+    margin-left: 37%;
+  }
+  .enroll {
+    margin-top: 10vh;
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .Navlinks_Mobile {
     display: flex;
     list-style: none;
     text-align: center;
     width: 70vw;
     justify-content: flex-end;
-    margin-left: -5rem;
+    margin-left: 10rem;
     margin-top: 2rem;
   }
-
-  a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 1.2rem;
-    padding: 6px 16px;
-    border-radius: 5px;
-    position: relative;
-    font-family: Gotham-bold;
-  }
-
-  @font-face {
-    font-family: Gotham-bold;
-    src: url(../../Font/GothamBold.ttf);
-  }
-
-  a:hover{
-    color:#1e6b6b
-  }
-  .enroll_btn{
-    color: white;
-    width: 85px;
-    height: 30px;
-    background-color: #1e6b6b;
-    border-radius: 31px;
-    margin-top: 32px;
-    padding-top: 10px;
-    margin-left: 20px;
-    transition: scale 0.2 ease;
-  }
-  .login_btn{
-    color: white;
-    width: 75px;
-    height: 30px;
-    background-color: #1e6b6b;
-    border-radius: 31px;
-    margin-top: 32px;
-    padding-top: 10px;
-    margin-left: 20px;
-    transition: scale 0.2 ease;
-  }
-
-  .enroll_btn:hover{
-    scale: 1.05;
-    color:white;
-  }
-  .login_btn:hover{
-    scale: 1.05;
-    color:white;
-  }
+}

@@ -1,9 +1,223 @@
-.font-Gotham-bold{
-    font-family: Gotham-bold;
-
-
+.font-Gotham-bold {
+  font-family: Gotham-bold;
 }
 @font-face {
-    font-family: Gotham-bold;
-    src: url(../../../Font/GothamBold.ttf);
-  }
+  font-family: Gotham-bold;
+  src: url("../../../Font/GothamBold.ttf");
+
+  font-family: Lato;
+  src: url("../../../Font/Lato-Regular.ttf");
+}
+.bpi-qr-png {
+  display: absolute;
+  margin-left: 12vh;
+  width: 10vw;
+  height: 28vh;
+  border-radius: 35px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pnb-qr-png {
+  display: absolute;
+  margin-left: 56vh;
+  width: 15vw;
+  height: 28vh;
+  border-radius: 35px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.gcash-qr-png {
+  display: absolute;
+  margin-left: 100vh;
+  width: 15vw;
+  height: 28vh;
+  border-radius: 35px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.infoContainer,
+.paymentContainer {
+  margin-top: -6vh;
+  width: 70vw;
+  background-color: #f0f1f1;
+  height: 60vh;
+  margin-left: -30vh;
+  padding: 2vh;
+  border-radius: 67px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.personal-info,
+.account-info {
+  color: #1e6b6b;
+  margin-top: 5vh;
+  margin-left: 1vw;
+  font-family: Gotham-bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.proof-payment {
+  color: #1e6b6b;
+  margin-left: 1vw;
+  font-family: Gotham-bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  margin-top: -1vh;
+  position: absolute;
+}
+
+label {
+  font-family: Gotham-bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.personal-info {
+  margin-top: 1vh;
+  font-size: 20px;
+}
+.payment-title {
+  font-size: 20px;
+  color: #1e6b6b;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-family: Gotham-bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bpi-title {
+  display: absolute;
+  margin-left: 5vw;
+  font-family: Lato;
+  font-weight: bold;
+}
+.pnb-title {
+  display: block;
+  margin-top: -41vh;
+  margin-left: 29vw;
+  font-family: Lato;
+  font-weight: bold;
+}
+.gcash-title {
+  display: block;
+  margin-top: -41vh;
+  margin-left: 55vw;
+  font-family: Lato;
+  font-weight: bold;
+}
+
+.bpi-acc-details {
+  display: absolute;
+  margin-left: -46vw;
+  margin-top: 2vh;
+  font-family: Lato;
+  font-weight: bold;
+  text-align: center;
+}
+.pnb-acc-details {
+  margin-left: 1vw;
+  margin-top: 2vh;
+  font-family: Lato;
+  font-weight: bold;
+  text-align: center;
+}
+.gcash-acc-details {
+  margin-left: 44vw;
+  margin-top: 2vh;
+  font-family: Lato;
+  font-weight: bold;
+  text-align: center;
+}
+
+.first-col {
+  margin-left: 2vw;
+  float: left;
+}
+
+.second-col {
+  float: left;
+  margin-left: 20vw;
+  position: absolute;
+}
+
+.fifth-col {
+  float: left;
+  margin-left: 20vw;
+  position: absolute;
+  margin-top: 42vh;
+}
+
+.sixth-col {
+  float: left;
+  margin-left: 38vw;
+  position: absolute;
+  margin-top: 42vh;
+}
+
+.third-col {
+  float: left;
+  margin-left: 46vw;
+  position: absolute;
+}
+
+.firstname,
+.midname,
+.lastname,
+.codename,
+.school,
+.address,
+.fb-name,
+.fb-link,
+.mobilenum,
+.tshirtsize {
+  display: flex;
+  width: 17vw;
+  margin-bottom: 1vw;
+  padding: 0.5vw;
+  border-radius: 7px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.email,
+.password,
+.confirmpass {
+  display: flex;
+  width: 17vw;
+  margin-bottom: 1vw;
+  padding: 0.5vw;
+  border-radius: 7px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.ref-num {
+  width: 17vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  padding: 0.5vw;
+  border-radius: 7px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.school,
+.address,
+.fb-name,
+.fb-link {
+  width: 25vw;
+}
+
+.mobilenum,
+.tshirtsize {
+  width: 15vw;
+}
+
+.fourth-col {
+  position: absolute;
+  margin-top: 42vh;
+  margin-left: 4vh;
+}
+.proof-payment-col {
+  position: absolute;
+  margin-top: 3vh;
+  margin-left: 2vh;
+}
+
+.account-info {
+  font-size: 20px;
+  margin-top: 37vh;
+  position: absolute;
+}

@@ -30,7 +30,7 @@ export default function ViewProfile() {
               <div key={index} className="course">
                 <h3>Course: {item.course}</h3>
               </div>
-              <div key={index} className="email">
+              <div key={index} className="email-main">
                 <h3>Email: {item.email}</h3>
               </div>
               <div key={index} className="mobilenumber">

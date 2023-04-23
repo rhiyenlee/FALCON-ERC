@@ -4,7 +4,7 @@ import "./style/home.css";
 import FirstBanner from "../../Images/falcon_discuss.png";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export const Home = () => {
   return (
     <div>
       <img src={FirstBanner} alt="background" className="bg-image" />
@@ -23,4 +23,5 @@ export default function Home() {
       </Link>
     </div>
   );
-}
+};
+export default Home;

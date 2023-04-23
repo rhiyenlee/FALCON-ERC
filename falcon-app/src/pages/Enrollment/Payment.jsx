@@ -1,4 +1,7 @@
 import { useStepperContext } from "./context/StepperContext";
+import BpiQr from "../../Images/bpi_qrcode.png";
+import PnbQr from "../../Images/pnb-digital-app-qr.png";
+import GCashQr from "../../Images/gcash-qr.jpg";
 
 export default function Payment() {
   const { userData, setUserData } = useStepperContext();
@@ -8,35 +11,55 @@ export default function Payment() {
     setUserData({ ...userData, [name]: value });
   };
   return (
-    <div className="flex flex-col ">
-      <div className="w-full mx-2 flex-1">
-        <div className="font-bold h-6 mt-3 text-gray-500 text-xs leading-8 uppercase">
-          Credit Card
-        </div>
-        <div className="bg-white my-2 p-1 flex border border-gray-200 rounded">
-          <input
-            onChange={handleChange}
-            value={userData["card"] || ""}
-            name="card"
-            placeholder="Credit Card#"
-            className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-          />
-        </div>
+    <div className="paymentContainer">
+      <div className="bpi-payment-col">
+        <p className="payment-title"> Mode of Payment </p>
+
+        <p className="bpi-title"> Bank of the Philippine Islands (BPI)</p>
+
+        <img src={BpiQr} alt="bpi-qr" className="bpi-qr-png" />
+
+        <p className="bpi-acc-details">
+          {" "}
+          Account Name: F.A.L Conducive Engineering Review Center <br />
+          Account No.: 0969612666
+        </p>
       </div>
-      <div className="w-full mx-2 flex-1">
-        <div className="font-bold h-6 mt-3 text-gray-500 text-xs leading-8 uppercase">
-          Exp
-        </div>
-        <div className="bg-white my-2 p-1 flex border border-gray-200 rounded">
-          <input
-            onChange={handleChange}
-            value={userData["exp"] || ""}
-            name="exp"
-            placeholder="YY/MM/DD"
-            type="text"
-            className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-          />
-        </div>
+
+      <div className="pnb-payment-col">
+        <p className="pnb-title"> Philippine National Bank (PNB) </p>
+
+        <img src={PnbQr} alt="pnb-qr" className="pnb-qr-png" />
+
+        <p className="pnb-acc-details">
+          {" "}
+          Account Name: F.A.L Conducive Engineering Review Center <br />
+          Account No.: 165310223342
+        </p>
+      </div>
+
+      <div className="gcash-payment-col">
+        <p className="gcash-title"> GCash </p>
+
+        <img src={GCashQr} alt="gcash-qr" className="gcash-qr-png" />
+
+        <p className="gcash-acc-details">
+          {" "}
+          Account Name: Rosalyn Luz <br />
+          GCash No.: 09457343928
+        </p>
+      </div>
+
+      <p className="proof-payment">Proof of Payment</p>
+      <div className="proof-payment-col">
+        <label>Reference Number</label>
+        <input
+          type="text"
+          name="ref-number"
+          id=""
+          className="ref-num"
+          placeholder="Minimum of 12 digits"
+        />
       </div>
     </div>
   );

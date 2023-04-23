@@ -9,10 +9,9 @@ module.exports = {
         "light-green": "#1E6B6B",
         "gray-color": "#D9D9D9",
       },
-      width:{
+      width: {
         "100-vh": "100vh",
       },
-
     },
   },
   plugins: [],

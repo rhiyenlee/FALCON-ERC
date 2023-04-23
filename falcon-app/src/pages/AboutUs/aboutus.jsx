@@ -33,7 +33,7 @@ export default function Aboutus() {
           passers, who are now successful professionals in the industry.
         </p>
       </div>
-      <div class="container">
+      <div class="container-main">
         <div class="left-section">
           <p class="mid-text">VISION</p>
           <img class="left-image" src={visiony} alt="visiony"></img>

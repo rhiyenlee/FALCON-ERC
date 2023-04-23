@@ -1,0 +1,9 @@
+.font-Gotham-bold{
+    font-family: Gotham-bold;
+
+
+}
+@font-face {
+    font-family: Gotham-bold;
+    src: url(../../../Font/GothamBold.ttf);
+  }

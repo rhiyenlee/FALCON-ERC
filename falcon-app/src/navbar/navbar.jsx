@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="color-container"></div>
       <div className="main-navbar">
         <img src={Logo} alt="Logo" className="logo-png" />
-        <h1 className="falcon-title">FALCon</h1>
+        <h1 className="falcon-title">FALCon ERC</h1>
         <ul
           className={Mobile ? "Navlinks_Mobile" : "nav-items"}
           onClick={() => setMobile()}

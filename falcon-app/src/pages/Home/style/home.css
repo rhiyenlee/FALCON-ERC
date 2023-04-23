@@ -35,5 +35,9 @@
     margin-left: 42vw;
     margin-top: 35vh;
     display: block;
-    position: fixed;
+    position: absolute;
+}
+.btn-enrollnow{
+    width: 10vw;
+    height: 5vh;
 }

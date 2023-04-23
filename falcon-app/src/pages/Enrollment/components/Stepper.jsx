@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import "../style/enrollment.css"
 
 const Stepper = ({ steps, currentStep }) => {
   const [newStep, setNewStep] = useState([]);
@@ -88,8 +89,8 @@ const Stepper = ({ steps, currentStep }) => {
             )}
           </div>
           <div
-            className={`absolute top-0  text-center mt-16 w-32 text-xs font-medium uppercase ${
-              step.highlighted ? "text-gray-900" : "text-gray-400"
+            className={`absolute top-0 font-Gotham-bold text-center mt-16 w-32 text-xs font-medium uppercase ${
+              step.highlighted ? "text-light-green" : "text-gray-400"
             }`}
           >
             {step.description}

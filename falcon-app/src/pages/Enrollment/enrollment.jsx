@@ -45,7 +45,7 @@ function Enrollment() {
     <div className="mx-auto rounded-2xl bg-white pb-2 shadow-xl md:w-1/2">
       {/* Stepper */}
       <div className="horizontal container mt-5 ">
-        <div className="bg-gray-color pb-5 rounded-full">
+        <div className="bg-gray-color shadow-md w-100-vh pb-5 rounded-full">
           <Stepper steps={steps} currentStep={currentStep} />
         </div>
 

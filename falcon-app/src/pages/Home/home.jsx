@@ -16,7 +16,7 @@ export const Home = () => {
               </div>
               
               <Link to="/enrollment" className="enrollnow_btn">
-              <button type="button" class="btn btn-success">
+              <button type="button" class="btn btn-success btn-enrollnow">
                 ENROLL NOW
               </button>
             </Link>  

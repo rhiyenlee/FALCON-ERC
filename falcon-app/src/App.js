@@ -1,9 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./navbar/navbar";
-import { Home } from "./pages/Home/home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Enrollment from "./pages/Enrollment/enrollment";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +12,9 @@ function App() {
           <Route path="/enrollment" element={<Enrollment />} />
           <Route path="/home" element = {<Home />}/>
         </Routes>
+      </BrowserRouter>
+      <BrowserRouter path="/aboutus">
+        <Aboutus />
       </BrowserRouter>
     </>
   );

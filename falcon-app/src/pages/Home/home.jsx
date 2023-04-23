@@ -1,25 +1,26 @@
-import React from 'react'
+import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style/home.css";
 import FirstBanner from "../../Images/falcon_discuss.png";
-import { Link }  from "react-router-dom";
+import { Link } from "react-router-dom";
 
-
-export const Home = () => {
+export default function Home() {
   return (
-    <div> 
-  <img src={FirstBanner} alt="background" className="bg-image"  />
-  <div className="banner-content">
+    <div>
+      <img src={FirstBanner} alt="background" className="bg-image" />
+      <div className="banner-content">
+        <p className="falcon-title-banner">
+          DISCOVER THE EASIEST WAY TO BECOME A LICENSED CIVIL ENGINEER with
+          <br />
+          FALCon's PROVEN QUALITY and HANDS-ON REVIEW PROGRAM!
+        </p>
+      </div>
 
-  <p className="falcon-title-banner">DISCOVER THE EASIEST WAY TO BECOME A LICENSED CIVIL ENGINEER with
-  <br />FALCon's PROVEN QUALITY and HANDS-ON REVIEW PROGRAM!</p>
-              </div>
-              
-              <Link to="/enrollment" className="enrollnow_btn">
-              <button type="button" class="btn btn-success btn-enrollnow">
-                ENROLL NOW
-              </button>
-            </Link>  
-         </div>
-  )
+      <Link to="/enrollment" className="enrollnow_btn">
+        <button type="button" class="btn btn-success btn-enrollnow">
+          ENROLL NOW
+        </button>
+      </Link>
+    </div>
+  );
 }

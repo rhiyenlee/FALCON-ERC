@@ -1,10 +1,10 @@
 .viewprofile_container {
-  margin-left: 35vw;
-  margin-top: 5vh;
-  background-color: #f0f1f1;
-  width: 35vw;
-  height: 10vh;
-  padding-top: 2vh;
+  margin-left: 39vw;
+  margin-top: 3vh;
+  background-color: white;
+  width: 25vw;
+  height: 5vh;
+  padding-top: 0.5vh;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 42px;
@@ -19,8 +19,8 @@
 
 .information-container {
   width: 45vw;
-  height: 50vh;
-  background-color: #f0f1f1;
+  height: 70vh;
+  background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 42px;
   margin-left: 30vw;
@@ -31,24 +31,114 @@
   background-color: #d9d9d9;
   width: 30vw;
   height: 5vh;
-  padding-top: 1vh;
-  margin-left: 5vw;
-  top: 40vh;
+  margin-left: 6vw;
+  top: 30vh;
   border-radius: 42px;
-  position: fixed;
+  position: absolute;
   font-family: Gotham-bold;
-  padding-left: 3vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
 }
 
 .gender {
   background-color: #d9d9d9;
   width: 30vw;
   height: 5vh;
-  padding-top: 1vh;
-  margin-left: 5vw;
-  top: 47vh;
+  margin-left: 6vw;
+  top: 36vh;
   border-radius: 42px;
-  position: fixed;
+  position: absolute;
   font-family: Gotham-bold;
-  padding-left: 3vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+.citizenship {
+  background-color: #d9d9d9;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 6vw;
+  top: 42vh;
+  border-radius: 42px;
+  position: absolute;
+  font-family: Gotham-bold;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+.enrollmentstatus {
+  background-color: #d9d9d9;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 6vw;
+  top: 48vh;
+  border-radius: 42px;
+  position: absolute;
+  font-family: Gotham-bold;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+.paymentstatus {
+  background-color: #d9d9d9;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 6vw;
+  top: 54vh;
+  border-radius: 42px;
+  position: absolute;
+  font-family: Gotham-bold;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+.course {
+  background-color: #d9d9d9;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 6vw;
+  top: 60vh;
+  border-radius: 42px;
+  position: absolute;
+  font-family: Gotham-bold;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+.email {
+  background-color: #d9d9d9;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 6vw;
+  top: 66vh;
+  border-radius: 42px;
+  position: absolute;
+  font-family: Gotham-bold;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+.mobilenumber {
+  background-color: #d9d9d9;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 6vw;
+  top: 72vh;
+  border-radius: 42px;
+  position: absolute;
+  font-family: Gotham-bold;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+.program {
+  background-color: #d9d9d9;
+  width: 30vw;
+  height: 14vh;
+  margin-left: 6vw;
+  top: 78vh;
+  border-radius: 42px;
+  position: absolute;
+  font-family: Gotham-bold;
+  padding-left: 2vw;
+  padding-top: 1vh;
 }

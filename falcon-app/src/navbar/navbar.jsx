@@ -30,6 +30,7 @@ export default function Navbar() {
               </>
             );
           })}
+
           <div className="enroll">
             <Link to="/enrollment" className="enroll_btn">
               <button type="button" class="btn btn-success">

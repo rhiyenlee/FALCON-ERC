@@ -73,17 +73,16 @@ a:hover {
   display: none;
 }
 
-.btn-success{
+.btn-success {
   border-radius: 30px;
   background-color: #1e6b6b;
 }
-.btn-success:hover{
+.btn-success:hover {
   background-color: #1e6b6b;
   transition: scale 0.2 ease;
 }
 
-
-.enroll{
+.enroll {
   margin-top: 0.5vh;
 }
 @media (max-width: 768px) {

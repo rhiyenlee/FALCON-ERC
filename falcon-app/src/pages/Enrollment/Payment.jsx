@@ -1,7 +1,12 @@
 import { useStepperContext } from "./context/StepperContext";
 import BpiQr from "../../Images/bpi_qrcode.png";
+<<<<<<< HEAD
 import PnbQr from "../../Images/pnb-digital-app-qr.png"
 import GCashQr from "../../Images/gcash-qr.jpg"
+=======
+import PnbQr from "../../Images/pnb-digital-app-qr.png";
+import GCashQr from "../../Images/gcash-qr.jpg";
+>>>>>>> fe30c926b587caf61aefa16065497a110d5601f3
 
 export default function Payment() {
   const { userData, setUserData } = useStepperContext();
@@ -12,6 +17,7 @@ export default function Payment() {
   };
   return (
     <div className="paymentContainer">
+<<<<<<< HEAD
     
       <div className="bpi-payment-col">
       <p className="payment-title"> Mode of Payment </p>
@@ -43,6 +49,56 @@ export default function Payment() {
 
       <p className="gcash-acc-details"> Account Name: Rosalyn Luz < br/>
           GCash No.: 09457343928</p>
+=======
+      <div className="bpi-payment-col">
+        <p className="payment-title"> Mode of Payment </p>
+
+        <p className="bpi-title"> Bank of the Philippine Islands (BPI)</p>
+
+        <img src={BpiQr} alt="bpi-qr" className="bpi-qr-png" />
+
+        <p className="bpi-acc-details">
+          {" "}
+          Account Name: F.A.L Conducive Engineering Review Center <br />
+          Account No.: 0969612666
+        </p>
+      </div>
+
+      <div className="pnb-payment-col">
+        <p className="pnb-title"> Philippine National Bank (PNB) </p>
+
+        <img src={PnbQr} alt="pnb-qr" className="pnb-qr-png" />
+
+        <p className="pnb-acc-details">
+          {" "}
+          Account Name: F.A.L Conducive Engineering Review Center <br />
+          Account No.: 165310223342
+        </p>
+      </div>
+
+      <div className="gcash-payment-col">
+        <p className="gcash-title"> GCash </p>
+
+        <img src={GCashQr} alt="gcash-qr" className="gcash-qr-png" />
+
+        <p className="gcash-acc-details">
+          {" "}
+          Account Name: Rosalyn Luz <br />
+          GCash No.: 09457343928
+        </p>
+      </div>
+
+      <p className="proof-payment">Proof of Payment</p>
+      <div className="proof-payment-col">
+        <label>Reference Number</label>
+        <input
+          type="text"
+          name="ref-number"
+          id=""
+          className="ref-num"
+          placeholder="Minimum of 12 digits"
+        />
+>>>>>>> fe30c926b587caf61aefa16065497a110d5601f3
       </div>
 
           <p className="proof-payment">Proof of Payment</p>

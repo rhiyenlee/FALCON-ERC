@@ -1,13 +1,13 @@
-.About{
-    margin-top: 30px;
-    text-align: center;
-    font-family: Gotham-bold;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
-    padding: 20px;
-    color: #1E6B6B;
+.About {
+  margin-top: 30px;
+  text-align: center;
+  font-family: Gotham-bold;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  padding: 20px;
+  color: #1e6b6b;
 }
 
 .bout {
@@ -18,45 +18,37 @@
   margin-right: 30px;
 }
 .mid-text {
-    color: #1E6B6B;
-    margin-right:32px;
-  }
-.container {
-    display: flex;
-    justify-content: center;
-    font-family: Gotham-bold;
-    align-items: center;
-    height: 70vh;
-    text-align: center;
+  color: #1e6b6b;
+  margin-right: 32px;
+}
+.container-main {
+  display: flex;
+  justify-content: center;
+  font-family: Gotham-bold;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
 
-  }
-  
-  .left-section, .right-section {
-    width: 50%;
-    height: 300px;
-    font-size: 16px;
-    margin-bottom: 70px;
+.left-section,
+.right-section {
+  width: 50%;
+  height: 300px;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
 
+.left-section {
+  margin-right: 20px;
+}
 
-  }
-  
-  .left-section {
-    margin-right: 20px;
-    
-  }
-  
-  .right-section {
-    margin-left: 20px;
-  }
+.right-section {
+  margin-left: 20px;
+}
 
-  .left-section img, .right-section img {
-    width: 45%;
-    height: auto;
-    margin-bottom: 10px;
-  
-  }
-
-
-  
-      
-  
+.left-section img,
+.right-section img {
+  width: 45%;
+  height: auto;
+  margin-bottom: 10px;
+}

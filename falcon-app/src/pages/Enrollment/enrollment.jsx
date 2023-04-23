@@ -3,8 +3,7 @@ import "./style/enrollment.css";
 import Stepper from "./components/Stepper";
 import StepperControl from "./components/StepperControl";
 import { UseContextProvider } from "./context/StepperContext";
-import BpiQr from "../../Images/bpi_qrcode.png";
-import PnbQr from "../../Images/pnb-digital-app-qr.png"
+
 import Payment from "./Payment";
 import PersonalInfo from "./PersonalInfo";
 import UploadCredentials from "./UploadCredentials";

@@ -3,7 +3,8 @@ import "./style/enrollment.css";
 import Stepper from "./components/Stepper";
 import StepperControl from "./components/StepperControl";
 import { UseContextProvider } from "./context/StepperContext";
-
+import BpiQr from "../../Images/bpi_qrcode.png";
+import PnbQr from "../../Images/pnb-digital-app-qr.png"
 import Payment from "./Payment";
 import PersonalInfo from "./PersonalInfo";
 import UploadCredentials from "./UploadCredentials";
@@ -42,7 +43,7 @@ function Enrollment() {
   };
 
   return (
-    <div className="mx-auto rounded-2xl bg-white pb-2 shadow-xl md:w-1/2">
+    <div className="mx-auto rounded-2xl pb-2 md:w-1/2">
       {/* Stepper */}
       <div className="horizontal container mt-5 ">
         <div className="bg-gray-color shadow-md w-100-vh pb-5 rounded-full">

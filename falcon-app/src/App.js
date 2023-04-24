@@ -9,6 +9,7 @@ import Aboutus from "./pages/AboutUs/aboutus";
 import ForgotPassword from "./pages/ForgotPassword/forgotpassword";
 import Login from "./pages/Login/login";
 import ResetPassword from "./pages/ResetPassword/resetpassword";
+import Services from "./pages/Services/services";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/login" element={<Login />} />
           <Route path="/resetpassword" element={<ResetPassword />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </BrowserRouter>
     </>

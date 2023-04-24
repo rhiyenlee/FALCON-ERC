@@ -25,9 +25,9 @@ export default function Login() {
           <label className="label-password">Password</label>
           <input type={passwordShown ? "text" : "password"} name="password" className="email-input" placeholder="Password" required/><br />
           <button className="show-pass" onClick={togglePassword}>Show Password</button><br />
-          
+
           <a className="forgot-pas" href="/forgotpassword">Forgot Password?</a><br />
-          
+
           <button className="buttn-log" name="log">Log In</button>
         </form>
 

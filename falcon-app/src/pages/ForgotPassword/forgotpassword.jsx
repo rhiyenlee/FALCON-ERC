@@ -1,8 +1,7 @@
 import React from 'react'
 import "./style/forgotpass.css"
 
-export default function 
-() {
+export default function () {
   return (
     <div>
         <div className="forgot-pass">
@@ -11,7 +10,7 @@ export default function
 
             <form action="" className="email-inputf">
               <label className="email-label">Email</label><br/>
-              <input type="email" name="email" className="input-emailf" placeholder="Email"/><br />
+              <input type="email" name="email" className="input-emailf" placeholder="Email" required/><br />
 
               <button className="submit-bttn" name="submit">Submit</button><br />
             

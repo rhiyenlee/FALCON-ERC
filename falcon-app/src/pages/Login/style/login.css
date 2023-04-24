@@ -8,7 +8,7 @@
 .container-mid{
   background-color: #F0F1F1;
   width: 40vw;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   position: fixed;
   margin-top: 10vh;
@@ -19,7 +19,7 @@
 
 .welcome-falcon{
   text-align: center;
-  margin-left: 9vw;
+  margin-left: 8vw;
   margin-top: 3vh;
   font-weight: 400;
   color: #1E6B6B;
@@ -62,6 +62,13 @@
   padding: 0.9vw;
 }
 
+.show-pass{
+  margin-left: 1vw;
+  font-size: 12px;
+  font-style: normal;
+  font-family: Gotham-Bold;
+  color: #1E6B6B;
+}
 
 .forgot-pas{
   margin-top: 5vh;
@@ -95,3 +102,4 @@
   font-family: Lato;
   src:url("../../../Font/Lato-Bold.ttf");
 }
+

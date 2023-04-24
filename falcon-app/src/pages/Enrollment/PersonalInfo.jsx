@@ -34,6 +34,7 @@ export default function PersonalInfo() {
             id=""
             className="midname"
             placeholder="Middle Name"
+            required
           />
           <label>Last Name </label>
           <input
@@ -44,6 +45,7 @@ export default function PersonalInfo() {
             id=""
             className="lastname"
             placeholder="Last Name"
+            required
           />
           <label>Code Name </label>
           <input
@@ -54,6 +56,7 @@ export default function PersonalInfo() {
             id=""
             className="codename"
             placeholder="ex. PtFtHAS13"
+            required
           />
         </div>
         <div className="second-col">
@@ -66,6 +69,7 @@ export default function PersonalInfo() {
             id=""
             className="school"
             placeholder="School"
+            required
           />
 
           <label>Address </label>
@@ -77,6 +81,7 @@ export default function PersonalInfo() {
             id=""
             className="address"
             placeholder="Address"
+            required
           />
 
           <label>Facebook Name </label>
@@ -88,6 +93,7 @@ export default function PersonalInfo() {
             id=""
             className="fb-name"
             placeholder="Facebook Name"
+            required
           />
 
           <label>Facebook Link </label>
@@ -99,6 +105,7 @@ export default function PersonalInfo() {
             id=""
             className="fb-link"
             placeholder="Facebook Link"
+            required
           />
         </div>
         <div className="third-col">
@@ -110,8 +117,9 @@ export default function PersonalInfo() {
             onChange={handleChange}
             value={userData["phone"] || ""}
             className="mobilenum"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            pattern="(^(+)(\d){12}$)|(^\d{11}$)"
             placeholder="+63"
+            required
           ></input>
 
           <label for="size">Tshirt Size: </label>
@@ -136,6 +144,7 @@ export default function PersonalInfo() {
             id=""
             className="email"
             placeholder="Email Address"
+            required
           />
         </div>
 
@@ -149,6 +158,7 @@ export default function PersonalInfo() {
             id=""
             className="password"
             placeholder="Password"
+            required
           />
         </div>
 
@@ -162,6 +172,7 @@ export default function PersonalInfo() {
             id=""
             className="confirmpass"
             placeholder="Confirm Password"
+            required
           />
         </div>
       </form>

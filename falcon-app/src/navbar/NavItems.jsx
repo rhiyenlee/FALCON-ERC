@@ -5,8 +5,8 @@ export const navItems = [
     cName: "nav-item",
   },
   {
-    title: "Services",
-    path: "/services",
+    title: "Programs",
+    path: "/programs",
     cName: "nav-item",
   },
   {

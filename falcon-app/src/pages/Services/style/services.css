@@ -124,13 +124,8 @@ p5{
     text-align: center;
     color:white;
     font-size: 20px;
+    padding: 0.5vh;
 }
-
-
-
-
-
-
 
 .containersss{
     width: 90%;
@@ -165,4 +160,7 @@ p5{
     text-align: center;
     color:white;
     font-size: 20px;
+}
+.inclusions1{
+    font-size: 15px ;
 }

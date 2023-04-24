@@ -2,12 +2,12 @@ import React, { useEffect, useState} from 'react'
 import "./style/services.css"
 
 
-export default function Services() {
+export default function Programs() {
     return (
       <div>
       <head>
           <title>
-              Services
+              Programs
           </title>
       </head>
       <center><h1 className='our-programs'>Our Programs</h1> </center>
@@ -101,38 +101,37 @@ export default function Services() {
                       National lvl Top 10: Free Tuition Fee<br />
                   </p3>
               </li>            
-          </ul>
-
-          <div class="containersss">
-          <ul>
-  
-              <li> 
-                  <div class="bottoms"></div> 
-                  <p1>Inclusions: </p1>       
-                  <p5>✔  Free Falcon T-shirt<br />
+              <li>
+                  <div class="bottom"></div> 
+                  <p1> Inclusions</p1>  
+                   <p5 className="inclusions1"> ✔ Free Falcon T-shirt (For packages only)<br />
                     ✔  Live Review Course Lectures (Concept-based & Zero-based Discussions)<br /> with UNLIMITED ACCESS to its recorded versions <br />(Recorded Videos may be replay until end of review program)<br />
                      ✔ Free Calculator Technique discussions<br />
                      ✔ Diagnostic Examination<br />
                     ✔ Module Examinations w/ discussion of solutions<br />
-                    ✔ Scheduled Peer/Group Tutorials<br />
+                    </p5>
+              </li>   
+              <li>
+                  <div class="bottom"></div> 
+                  <p1> Inclusions</p1>  
+                   <p5 className="inclusions1"> ✔ Scheduled Peer/Group Tutorials<br />
                     ✔ Weekly Examinations w/ discussion of solutions<br />
                     ✔ Unlimited consultations <br />
                     ✔ Three (3) Preboard/Mock Examinations before Refresher Course<br />
                     ✔ Live Refresher Sessions with UNLIMITED ACCESS to its recorded versions <br />
-                    ✔ Mastery Examinations w/ discussion<br />
+                    </p5>
+              </li>   
+              <li>
+                  <div class="bottom"></div> 
+                  <p1> Inclusions</p1>  
+                   <p5 className="inclusions1"> ✔ Mastery Examinations w/ discussion<br />
                     ✔ Evaluation Examinations w/ discussion of solutions<br />
                     ✔ Beat-the-clock trainings<br />
                     ✔ One (1) Preboard/Mock Examinations before Final Coaching<br />
                     ✔ Free final coaching<br />
-                    </p5>    
-                
-             </li>
-             </ul>
-
-
-
-
-          </div>
+                    </p5>
+              </li>     
+          </ul>
       </div>
       </div>
     )

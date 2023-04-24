@@ -1,15 +1,8 @@
-import { useStepperContext } from "./context/StepperContext";
 import BpiQr from "../../Images/bpi_qrcode.png";
 import PnbQr from "../../Images/pnb-digital-app-qr.png";
 import GCashQr from "../../Images/gcash-qr.jpg";
 
 export default function Payment() {
-  const { userData, setUserData } = useStepperContext();
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setUserData({ ...userData, [name]: value });
-  };
   return (
     <div className="paymentContainer">
       <div className="bpi-payment-col">
@@ -62,14 +55,26 @@ export default function Payment() {
         />
       </div>
 
-          <p className="proof-payment">Proof of Payment</p>
-            <div className="proof-payment-col">
-          
-            <label>Reference Number</label>
-            <input type="text" name="ref-number" id="" className="ref-num" placeholder="Minimum of 12 digits" />
-            </div>
-
-
+      <p className="proof-payment">Proof of Payment</p>
+      <div className="proof-payment-col">
+        <label>Reference Number</label>
+        <input
+          type="text"
+          name="ref-number"
+          id=""
+          className="ref-num"
+          placeholder="Minimum of 12 digits"
+        />
+        <div className="screenshot-container">
+          <div className="screenshot-image">
+            <p>Screenshot or Image of Receipt</p>
+          </div>
+          <input
+            type="file"
+            className="file-screenshot relative block min-w-0 rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:rounded-md file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary "
+          />
+        </div>
+      </div>
     </div>
   );
 }

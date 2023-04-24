@@ -11,9 +11,3 @@ export function UseContextProvider({ children }) {
     </StepperContext.Provider>
   );
 }
-
-export function useStepperContext() {
-  const { userData, setUserData } = useContext(StepperContext);
-
-  return { userData, setUserData };
-}

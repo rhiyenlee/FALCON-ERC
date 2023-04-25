@@ -1,69 +1,150 @@
-import React, { useState } from "react";
-import "./style/enrollment.css";
-import Stepper from "./components/Stepper";
-import StepperControl from "./components/StepperControl";
-import { UseContextProvider } from "./context/StepperContext";
-
-import Payment from "./Payment";
+import React, { Component } from "react";
 import PersonalInfo from "./PersonalInfo";
+import Payment from "./Payment";
 import UploadCredentials from "./UploadCredentials";
 import Verify from "./Verify";
 
-function Enrollment() {
-  const [currentStep, setCurrentStep] = useState(1);
+export class Enrollment extends Component {
+  state = {
+    step: 1,
+    firstName: "",
+    middleName: "",
+    lastName: "",
+    codeName: "",
+    schoolName: "",
+    address: "",
+    fbName: "",
+    fbLink: "",
+    mobileNum: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    Error: "",
+    LoginError: "",
+  };
 
-  const steps = [
-    "Personal Information",
-    "Upload Documents",
-    "Payment",
-    "Verify Account",
-  ];
+  nextStep = () => {
+    const { step } = this.state;
+    this.setState({
+      step: step + 1,
+    });
+  };
 
-  const displayStep = (step) => {
+  prevStep = () => {
+    const { step } = this.state;
+    this.setState({
+      step: step - 1,
+    });
+  };
+
+  handleChange = (input) => (e) => {
+    this.setState({ [input]: e.target.value });
+  };
+
+  goToLogin = () => {
+    this.setState({
+      state: 4,
+    });
+  };
+
+  goToSignup = () => {
+    this.setState({
+      step: 1,
+    });
+  };
+
+  submit = (
+    firstName,
+    middleName,
+    lastName,
+    codeName,
+    schoolName,
+    address,
+    fbName,
+    fbLink,
+    mobileNum,
+    email,
+    password,
+    confirmPassword
+  ) => {
+    const { step } = this.state;
+    this.setState({
+      step: step + 1,
+    });
+  };
+
+  render() {
+    const { step } = this.state;
+    const {
+      firstName,
+      middleName,
+      lastName,
+      codeName,
+      schoolName,
+      address,
+      fbName,
+      fbLink,
+      mobileNum,
+      email,
+      password,
+      confirmPassword,
+      Error,
+      LoginError,
+    } = this.state;
+    const values = {
+      firstName,
+      middleName,
+      lastName,
+      codeName,
+      schoolName,
+      address,
+      fbName,
+      fbLink,
+      mobileNum,
+      email,
+      password,
+      confirmPassword,
+      Error,
+      LoginError,
+    };
+
     switch (step) {
       case 1:
-        return <PersonalInfo />;
+        return (
+          <PersonalInfo
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+            goToLogin={this.goToLogin}
+          />
+        );
       case 2:
-        return <UploadCredentials />;
+        return (
+          <UploadCredentials
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+          />
+        );
       case 3:
-        return <Payment />;
+        return (
+          <Payment
+            submit={this.submit}
+            prevStep={this.prevStep}
+            values={values}
+            handleChange={this.handleChange}
+          />
+        );
       case 4:
-        return <Verify />;
-      default:
+        return (
+          <Verify
+            goToSignup={this.goToSignup} //submit method will come here
+            prevStep={this.prevStep}
+            values={values}
+          />
+        );
     }
-  };
-
-  const handleClick = (direction) => {
-    let newStep = currentStep;
-
-    direction === "next" ? newStep++ : newStep--;
-    // check if steps are within bounds
-    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
-  };
-
-  return (
-    <div className="mx-auto rounded-2xl pb-2 md:w-1/2">
-      {/* Stepper */}
-      <div className="horizontal container mt-5 ">
-        <div className="bg-gray-color shadow-md w-100-vh pb-5 rounded-full">
-          <Stepper steps={steps} currentStep={currentStep} />
-        </div>
-
-        <div className="my-10 p-10 ">
-          <UseContextProvider>{displayStep(currentStep)}</UseContextProvider>
-        </div>
-      </div>
-
-      {/* navigation button */}
-      {currentStep !== steps.length && (
-        <StepperControl
-          handleClick={handleClick}
-          currentStep={currentStep}
-          steps={steps}
-        />
-      )}
-    </div>
-  );
+  }
 }
 
 export default Enrollment;

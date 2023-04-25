@@ -35,12 +35,12 @@
 }
 
 .infoContainer,
-.paymentContainer{
-  margin-top: -6vh;
+.paymentContainer {
+  margin-top: 6vh;
   width: 70vw;
   background-color: #f0f1f1;
   height: 60vh;
-  margin-left: -30vh;
+  margin-left: 15vw;
   padding: 2vh;
   border-radius: 67px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -312,11 +312,11 @@ label {
 }
 
 .upload-credentials-container {
-  margin-top: -6vh;
+  margin-top: 6vh;
   width: 70vw;
   background-color: #f0f1f1;
   height: 30vh;
-  margin-left: -30vh;
+  margin-left: 15vw;
   padding: 2vh;
   border-radius: 67px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -350,4 +350,38 @@ label {
   height: 4vh;
   margin-left: 1vw;
   margin-top: 1vh;
+}
+
+.next-btn-personalinfo {
+  margin-top: 55vh;
+  margin-left: 30vw;
+  background-color: #1e6b6b;
+  width: 5vw;
+  border-radius: 31px;
+  color: white;
+}
+
+.next-btn-uploadcredentials {
+  background-color: #1e6b6b;
+  width: 5vw;
+  border-radius: 31px;
+  color: white;
+  margin-top: 10vh;
+  margin-left: 50vw;
+}
+
+.back-btn-uploadcredentials {
+  background-color: #1e6b6b;
+  width: 5vw;
+  border-radius: 31px;
+  color: white;
+}
+
+.next-btn-payment {
+  background-color: #1e6b6b;
+  width: 5vw;
+  border-radius: 31px;
+  color: white;
+  margin-top: 15vh;
+  margin-left: 50vw;
 }
